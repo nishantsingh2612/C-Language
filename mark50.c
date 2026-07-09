@@ -1,3 +1,5 @@
+/* Program to print numbers from 1 to 100 and calculating 
+the sum of two numbers using functions */
 #include<stdio.h>
 void countTo100();
 int sum(int, int);
