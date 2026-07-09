@@ -1,3 +1,4 @@
+// Program to check the voter eligibility of a person in India
 #include <stdio.h>
 int main()
 {
