@@ -1,13 +1,27 @@
-#include <stdio.h>
+#include<stdio.h>
+void countTo100();
+int sum(int, int);
 int main()
 {
-    int age;
-    printf("Enter the age to check whether the individual is eligible to vote or not: ");
-        scanf("%d",&age);
-            if(age>=18)
-            printf("You are eligible to vote");
-            else
-            printf("You are  not eligible to vote yet");
-            return 0;
-            
+    int a,b;
+    printf("Welcome to learning numbers\n");
+    countTo100();
+    printf("\nWelcome to calculating sum of two numbers");
+    int add=sum(a,b);
+    printf("The sum is %d",add);
+    return 0;
+}
+void countTo100()
+{
+    for(int i=1; i<=100; i++)
+    {
+        printf("%d ",i);
+    }
+}
+int sum(int a, int b)
+{
+    printf("\nEnter two numbers: ");
+    scanf("%d%d",&a,&b);
+    int addition=a+b;
+    return addition;
 }

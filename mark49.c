@@ -1,5 +1,5 @@
-/* Program to print numbers from 1 to 100 and then 
-sum of two numbers using functions */
+/* Program to print numbers from 1 to 100 and calculating the  
+sum of 2 and 8 using functions */
 #include<stdio.h>
 void countTo100();
 int sum(int, int);
@@ -8,8 +8,8 @@ int main()
     printf("Welcome to learning numbers!\n");
     countTo100();
     printf("\n");
-    printf("Welcome to calculating sum of two numbers\n");
-    int add=sum(4,6);
+    printf("Calculating the sum of 2 and 8...\n");
+    int add=sum(2,8);
     printf("The sum is %d", add);
     return 0;
 }
