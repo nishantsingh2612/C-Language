@@ -1,5 +1,5 @@
 /*Program to swap two numbers without changing the original values 
-using function*/
+using function (call by value) */
 #include<stdio.h>
 void swap(int, int);
 int main()
