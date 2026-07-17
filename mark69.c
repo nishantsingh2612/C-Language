@@ -1,24 +1,23 @@
-// 2D Array
-// Program to print marks of 4 subjects each of 2 students while taking input from user
+// Arrays and pointers
+// Function to calculate the sum of array elements
 #include<stdio.h>
+int sumArray(int *arr, int size);
 int main()
 {
-    int students=2;
-    int subjects=4;
-    int marks[2][4];
-    for(int row=0; row < students; row++)
+    int myArray[]={1,2,3,4,5,6};
+    int size = sizeof(myArray) / sizeof(myArray[0]);
+    // Array decays into a pointer when passed
+    int total = sumArray(myArray, size);
+    printf("The sum of the array elements is %d", total);
+    return 0;
+}
+int sumArray(int *arr, int size)
+{
+    int sum = 0;
+    for(int i=0; i < size; i++)
     {
-        for(int column=0; column < subjects; column++)
-        {
-            printf("Enter the marks of student %d, subject %d: ",(row+1),(column+1));
-            scanf(" %d", &marks[row][column]);
-        }
+        // Access elements via pointer arithmetic
+        sum += arr[i];
     }
-    for(int row=0; row < students; row++)
-    {
-        for(int column=0; column < subjects; column++)
-        {
-            printf("\nMarks of student %d, subject %d are %d",(row + 1),(column + 1), marks[row][column]);
-        }
-    }
+    return sum;
 }
