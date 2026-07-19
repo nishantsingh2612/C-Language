@@ -1,4 +1,4 @@
-/*Program to swap two numbers without changing the original values 
+/* Program to swap two numbers without changing the original values 
 using function (call by value) */
 #include<stdio.h>
 void swap(int, int);

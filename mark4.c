@@ -1,4 +1,4 @@
-/** To print something while taking input from user
+/* To print something while taking input from user
 or keyboard */
 #include<stdio.h>
 int main()
