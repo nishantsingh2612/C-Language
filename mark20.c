@@ -2,11 +2,17 @@
 #include<stdio.h>
 int main()
 {
-    int x,y,hcf;
+    int x, y, h;
     printf("Enter two numbers: ");
-    scanf("%d%d",&x,&y);
-    for(hcf=x<y?x:y; hcf>=1; hcf--)
-    if(x % hcf==0 && y % hcf==0)
-    break;
-    printf("HCF of %d and %d is %d",x,y,hcf);
+    scanf(" %d %d", &x, &y);
+
+    for(h = x<y? x: y; h >= 1; h--)
+    {
+        if(x % h == 0 && y % h == 0)
+        {
+            printf("HCF of %d and %d is %d", x, y, h);
+            break;
+        }
+    }
+    return 0;
 }

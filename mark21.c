@@ -2,11 +2,17 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,lcm;
+    int a, b, l;
     printf("Enter two numbers: ");
-    scanf("%d%d",&a,&b);
-    for(lcm=a>b?a:b; lcm<=a*b; lcm=lcm+(a>b?a:b))
-    if(lcm % a==0 && lcm % b==0)
-    break;
-    printf("LCM of %d and %d is %d",a,b,lcm);
+    scanf(" %d %d", &a, &b);
+
+    for(l = a>b? a: b; l <= a*b; l = l + (a>b?a:b))
+    {
+        if(l % a == 0 && l % b == 0)
+        {
+            printf("LCM of %d and %d is %d", a, b, l);
+            break;
+        }
+    }
+    return 0;
 }
