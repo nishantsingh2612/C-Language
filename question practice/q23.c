@@ -3,16 +3,16 @@
 int square(int);
 int main()
 {
-    int n;
+    int num;
     printf("Enter a number: ");
-    scanf(" %d", &n);
+    scanf(" %d", &num);
 
-    int res = square(n);
-    printf("The square of %d is %d", n, res);
+    int res = square(num);
+    printf("The square of %d is %d", num, res);
     return 0;
 }
-int square(int num)
+int square(int a)
 {
-    int sqr = num * num;
+    int sqr = a * a;
     return sqr;
 }

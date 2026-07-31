@@ -1,5 +1,7 @@
 // Function that prints the current date
 #include<stdio.h>
+#include<time.h>
+
 void print_date();
 int main()
 {
@@ -9,5 +11,9 @@ int main()
 }
 void print_date()
 {
-    printf("Today's date is 31st July, 2026");
+    time_t current_time;
+    time(&current_time);
+
+    char *date_str = asctime(localtime(&current_time));
+    printf("Current date is: %s", date_str);
 }
