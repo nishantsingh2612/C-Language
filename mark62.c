@@ -1,18 +1,21 @@
-// To calculate factorial of 5,10,15 and 20 using long datatype
+// To calculate factorial using long long datatype
 #include<stdio.h>
-long factorial(int);
+long long factorial(int);
 int main()
 {
-    printf("\nFactorial of 5 is %ld",factorial(5));
-    printf("\nFactorial of 10 is %ld",factorial(10));
-    printf("\nFactorial of 15 is %ld",factorial(15));
-    printf("\nFactorial of 20 is %ld",factorial(20));
+    int num;
+    printf("Welcome to factorial calculation\n");
+    printf("Enter a number: ");
+    scanf(" %d", &num);
+
+    long long res = factorial(num);
+    printf("The factorial of %d is: %lld", num, res);
     return 0;
 }
-long factorial(int n)
+long long factorial(int num)
 {
-    long result = 1;
-    for(int i=1; i<=n; i++)
+    long long result = 1;
+    for(int i=1; i <= num; i++)
     {
         result *= i;
     }

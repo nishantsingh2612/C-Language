@@ -1,4 +1,4 @@
-/* Program that prompts the user to enter a positive number and keep askingfor
+/* Program that prompts the user to enter a positive number and keep asking for
 the number until the user enters a valid positive number using do-while loop */
 #include<stdio.h>
 int main()

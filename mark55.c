@@ -7,14 +7,14 @@ int main()
     printf("Welcome to calculating factorial\n");
     printf("Enter a number: ");
     scanf("%d",&n);
-    int result=factorial(n);
-    printf("The factorial of %d is %d",n,result);
+    int res = factorial(n);
+    printf("The factorial of %d is %d", n, result);
     return 0;
 }
 int factorial(int n)
 {
-    if(n==0) // Base Case
+    if(n == 0) // Base Case
     return 1;
     else
-    return n*factorial(n-1); // Recursive Case
+    return n * factorial(n - 1); // Recursive Case
 }
